@@ -38,7 +38,7 @@ function rest_req($method, $url, $headers, $data = NULL)
 			break;
 
 		case 'GET':
-		 	curl_setopt($curl, CURLOPT_POST, 1);
+		 	curl_setopt($curl, CURLOPT_POST, 0);
 			break;
 
 		case 'PUT':
